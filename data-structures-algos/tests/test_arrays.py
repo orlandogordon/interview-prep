@@ -1,5 +1,6 @@
 import pytest
 from arrays.test1 import coin_func
+from arrays.min_stack import MinStack, use_min_stack
 
 # https://realpython.com/pytest-python-testing/#what-makes-pytest-so-useful
 
@@ -17,5 +18,12 @@ class TestNumArrays:
 
     def test_array2(self):
         assert coin_func([1,3,4]) == 8
+
+    def test_minstack(self):
+        input1a = ["MinStack","push","push","push","getMin","pop","top","getMin"]
+        input1b = [[],[-2],[0],[-3],[],[],[],[]]
+        excepted = [None,None,None,None,-3,None,0,-2]
+        assert use_min_stack(input1a, input1b) == excepted
+        
 
 
