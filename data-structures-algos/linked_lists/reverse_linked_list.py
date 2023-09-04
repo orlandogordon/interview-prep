@@ -25,11 +25,11 @@ def reverse_ll(head):
         return head
 
 
-linkedList2 = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
-linkedList = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
-linkedList1_rev = ListNode(5, ListNode(
-    4, ListNode(3, ListNode(2, ListNode(1)))))
-ans = reverse_ll(linkedList)
-print(linkedList1_rev)
-print(reverse_ll(linkedList) == linkedList1_rev)
-print(ans.create_arr())
+# linkedList2 = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
+# linkedList = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
+# linkedList1_rev = ListNode(5, ListNode(
+#     4, ListNode(3, ListNode(2, ListNode(1)))))
+# ans = reverse_ll(linkedList)
+# print(linkedList1_rev)
+# print(reverse_ll(linkedList) == linkedList1_rev)
+# print(ans.create_arr())
